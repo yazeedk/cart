@@ -1,13 +1,13 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import Cart from './components/Cart';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-class App extends React.Component {
-  render() {
-    return <Cart />;
-  }
-}
-
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-root.render(<App />);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+س
